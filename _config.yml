@@ -21,13 +21,7 @@
 title: NestArray
 email: jrw@uark.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello! I am a graduate student studying statistical signal proccessing. 
-  This website acts as a host for code written for project I've been a part of. 
-  In wireless communications, I've specifically conducted work on 
-   realistic pulse shaping waveforms, orthogonal time-frequency space (OTFS), 
-   orthogonal delay-Doppler multiplexing (ODDM) and tri-orthogonal ODDM.
-   I've also trained an accurate elastic-net logistic regression model capable
-    of detecting dehydration in infants and internal bleeding in pigs. 
+  A website showcasing projects and code in statistical signal processing and wireless communications, including work on pulse shaping waveforms, OTFS, ODDM, and machine learning applications in biomedical signal analysis.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
