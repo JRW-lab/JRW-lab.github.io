@@ -29,7 +29,7 @@
         </section> -->
 
         <section id="pages">
-          <a href="{{ site.url }}">{{ "Home" }}</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/' }}">Home</a>&nbsp;
           {%- for page in site.pages  -%}
               <a href="{{ page.url }}">{{ page.title | escape }}</a>&nbsp;
           {%- endfor  -%}
