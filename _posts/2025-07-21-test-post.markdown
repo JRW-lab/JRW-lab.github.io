@@ -1,8 +1,12 @@
 ---
 layout: default
-title:  "Test post"
+title:  "Welcome!"
 date:   2025-07-21 11:59:00 -0500
-categories: test
+categories: welcome
 ---
 
-Text body
+Hello and welcome to my newly launched website!
+
+I'll be using this website as the main host of projects I've been working on, smaller activities related to coding, and generally anything that is interesting to me. Feel free to check in routinely to see what I've been up to. :)
+
+-JRW
