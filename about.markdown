@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Hello! I am Jeremiah Wimer, a graduate student studying statistical signal proccessing, but my friends call me Rhys (my middle name). This website showcases some of my professional work with statistical signal processing and wireless communications, as well as some personal projects I've been interested in. Specfically, I have experience working with pulse shaping waveforms, OTFS, ODDM, and machine learning applications in biomedical signal analysis.
+Hello, I'm Jeremiah Wimer—but my friends call me Rhys (my middle name). I'm a graduate student in electrical engineering with a specialization in statistical signal processing. I have a strong interest in writing efficient, reliable code and tackling complex system-level challenges, driven by curiosity and a passion for sharing knowledge.
+
+I believe that meaningful progress—both in technology and society—comes from collaboration and open understanding. This website serves as a platform to share my experiences, projects, and insights with the broader community.
+
+Here, you'll find examples of my work in statistical signal processing and wireless communications, along with a selection of personal projects. My experience includes research and development in pulse shaping waveforms, modulation techniques such as OFDM, OTFS, and ODDM, as well as machine learning applications in biomedical signal analysis.
 
 [View my resume]( /resume.pdf )
-
-This website acts as a host for code written for project I've been a part of. In wireless communications, I've specifically conducted work on realistic pulse shaping waveforms, orthogonal time-frequency space (OTFS), orthogonal delay-Doppler multiplexing (ODDM) and tri-orthogonal ODDM. I've also trained an accurate elastic-net logistic regression model capable of detecting dehydration in infants, and another for detecting internal bleeding in pigs. 

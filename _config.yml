@@ -21,7 +21,8 @@
 title: JRW-Lab
 email: jrw@uark.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  A website showcasing projects and code in statistical signal processing and wireless communications, including work on pulse shaping waveforms, OTFS, ODDM, and machine learning applications in biomedical signal analysis.
+  "What I cannot create, I do not understand"
+  --Richard Feynman
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb

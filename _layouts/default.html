@@ -28,11 +28,11 @@
           <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section> -->
 
-
         <section id="pages">
-            {%- for page in site.pages  -%}
-                <a href="{{ page.url }}">{{ page.title | escape }}</a>&nbsp;
-            {%- endfor  -%}
+          <a href="{{ site.url }}">{{ "Home" }}</a>&nbsp;
+          {%- for page in site.pages  -%}
+              <a href="{{ page.url }}">{{ page.title | escape }}</a>&nbsp;
+          {%- endfor  -%}
         </section>
 
         <hr>
