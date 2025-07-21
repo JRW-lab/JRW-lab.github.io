@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Test post"
 date:   2025-07-21 11:59:00 -0500
 categories: test
