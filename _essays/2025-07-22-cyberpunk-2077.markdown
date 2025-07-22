@@ -1,0 +1,31 @@
+---
+layout: default
+title:  "On Impermanence in Cyberpunk 2077"
+description:  "Reflections on Mortality and Choice"
+date:   2025-07-22 4:16:00 -0500
+categories: simulator
+---
+
+<h3>{{ page.description }}</h3> 
+
+![Alt text for accessibility](/assets/cyberpunk_title.png)
+
+The following essay was written a few months ago when I decided to revist the videogame Cyberpunk 2077. In order to understand my decision to do so, I thought about what intrigued me about the game to begin with. Whether deliberate or not, the subtle storytelling present still makes Cyberpunk one of the most realistic sci-fi settings for me, and this essay focuses on one aspect of many that makes Cyberpunk 2077 unique.
+
+<hr>
+	
+Starting a new playthrough of Cyberpunk 2077, I’m immediately met with familiar excitement for a fresh start to the game. The game was hoped to be a massive realistic simulator of life in a punk-envisioned near-dystopia future, where the state of California has declared independence and only a few hyper-wealthy companies vi for control of the few remaining resources. So many possibilities are teased at the beginning of the game, and while it may fall short of fulfilling the promises set pre-release, it’s a solid opening that sometimes feels like playing a first-person movie. Meeting Jackie and understanding his character is always a treat, mainly because he’s meant to be an innocent puppy dog, there to cheer you along right before his eventual killing off. In the game’s original marketing before its release, trailers casually showed Jackie dying inconsequentially in some car shootout, much to the bewilderment of fans anxious to play. Why would they spoil such an integral story piece? How could that possibly be done by the studio known for their intriguing twists and cinematic moments in their stories? Playing Cyberpunk then, and replaying it now, the answer’s become incredibly obvious. This isn’t a game about seeing you and your friends make it against all odds. Cyberpunk 2077 is a game about facing your inevitable death in a world run by systems that don’t care about your wellbeing.
+
+Now, that might sound very edgy – and it is – but to me it’s interesting how the game approaches this topic. Nearly every reaction to this central scenario has been thought through: Do you still act warmly towards the people around you, even when you know you’ll be dead in a few months, and they’ll eventually forget you? Should you really care about killing a few junkies just to be on the good side of some random stranger you’re helping? Do you even have an obligation to help the people around you, when they don’t even treat you with respect and your life’s on a ticking clock? The most jarring detail about the design of the game became immediately apparent to players upon release, and that is the fact that the ending of the game is nearly entirely dictated by the final decision of the game: how to go out in a blaze of glory, if glory’s what you’re after at all. However, even this speaks of the true message of the game. If your life isn’t valuable in this city built on corporate greed, why would the end of your life be? Nearly every decision you make throughout the game only changes how people in that conversation interact with you, usually just during that interaction but rarely going forward. In a way, the ending gives you the most amount of agency your character’s ever been given. With one resolution, you can watch it all burn.
+
+In hindsight, this theme can be seen throughout the design of all of the game, and it’s shocking to me how many people miss it. Even the anime Cyberpunk: Edgerunners shows this same theme, right down to the theme song repeating “I’m gonna burn,” prematurely cutting off Franz Ferdinand’s original lyric “I’m gonna burn this city,” leaving the main character to be consumed by his own fury as the system around him looks on indifferently. Despite all his rage, he is still just a rat in a cage, and the cage doesn’t even know he exists. Contrasting with other open-world RPGs like the Fallout series, Fallout 4 also gave players the impression that their decisions don’t matter. Where Fallout 4 and Cyberpunk 2077 differ is in execution and intention; Fallout 4 was meant to be a grand experiment of player freedom where you could do whatever you want, and the world would react to you. It was meant to have every decision matter, and when it became clear that wasn’t the case, players were also disappointed. Cyberpunk 2077 has the exact opposite intention in mind, and while the standards for the genre (and the horrendously ambitious pre-launch promises) already set expectations in players’ minds, the game never gives the impression that players’ choices matters. This alignment of play experience with story subtext is what makes Cyberpunk 2077 exceptional.
+
+The true catharsis of Cyberpunk is playing it again with the knowledge that there is nothing you can do to cure your terminal condition, and that’s okay. The whole game has V staring down the barrel, for the most part never breaking a sweat in the face of overwhelming odds. The things you do may never be seen by those who come after you, but every little thing you do in the game impacts the lives of your digital friends and comrades. Of all the options available to you in the game’s penultimate mission, the option to end your own life is undoubtably the worst ending you can get in the game, with all your companions calling your phone to voicemail telling you how disappointed or angry they are with you. This ending is meant to be dissatisfying because, even though we as individuals are left feeling near powerless, you’re still required to keep calm and carry on. Even if this doesn’t last forever, even if it’s eventually forgotten, the actions we make matter here and now. A small act of revolt is nothing in the scope of geological time, but it’s worthwhile all the same. It’s been clear from the start with CD Projekt wants to say:
+
+Never stop fighting. 
+
+Never fade away. 
+
+-JRW
+
+![Alt text for accessibility](/assets/image.png)
