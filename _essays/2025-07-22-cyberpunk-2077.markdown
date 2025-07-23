@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "On Impermanence in Cyberpunk 2077"
+title:  "Impermanence in Cyberpunk 2077"
 description:  "Reflections on Mortality and Choice"
 date:   2025-07-22 4:16:00 -0500
 categories: simulator
@@ -8,7 +8,7 @@ categories: simulator
 
 <h3>{{ page.description }}</h3> 
 
-![Alt text for accessibility](/assets/cyberpunk_title.png)
+![Cyberpunk logo](/assets/cyberpunk_title.png)
 
 The following essay was written a few months ago when I decided to revist the videogame Cyberpunk 2077. In order to understand my decision to do so, I thought about what intrigued me about the game to begin with. Whether deliberate or not, the subtle storytelling present still makes Cyberpunk one of the most realistic sci-fi settings for me, and this essay focuses on one aspect of many that makes Cyberpunk 2077 unique.
 
@@ -28,4 +28,4 @@ Never fade away.
 
 -JRW
 
-![Alt text for accessibility](/assets/image.png)
+![V leaning on car (screenshot)](/assets/V.png)
