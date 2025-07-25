@@ -9,14 +9,53 @@ I've spent a lot of time thinking through the most organized way to simulate a s
 
 Generally, this method works by treating a set of parameters as a unique unit and given a specific name, which can either be created in a readable format (I used to just list the parameter values in a string) or simply be a generated hash key. Each set of parameters is therefore treated as a single point in an N-dimensional space, where N is the number of parameters. In the same manner, a plot generated from these data points can be thought of as a 2D slice that holds all but a few parameters constant.
 
-<div style="text-align: center;">
+<!-- <div style="text-align: center;">
   <iframe src="/assets/3d_plane_plot.html" width="100%" height="500" style="border: none;"></iframe>
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 1: Interactive plot showing a 2D plane slicing through a 3D grid of points.
   </p>
+</div> -->
+
+<div id="plot-container" style="position: relative; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; margin: 2em 0;">
+  <button onclick="load3DPlot(this)" style="padding: 1em 2em; font-size: 1em;">Load Figure 1 (Interactive)</button>
 </div>
 
-Figure 1 above shows a simplified case, where the generated plot made by the simulator is the 2D slice cutting through the 3D collection of data points (meaning N=3). Additionally, each straight line of on-plane points represented a different line drawn on the generated plot. All other off-plane points aren't used in generating the plot. The end goal of generating a plot, then, is to create all needed on-plane data points to draw the desired line of points. Since all data lines need to share the same y-axis, all lines of points on the 2D plane are parallel, moving in the same direction.
+<script>
+  function load3DPlot(button) {
+    const container = button.parentElement;
+    container.innerHTML = `
+      <div style="position: relative; height: 100%;">
+        <iframe src="/assets/3d_plane_plot.html" width="100%" height="100%" style="border: none; margin-bottom: -1em;"></iframe>
+        <p style="font-style: italic; margin-top: 0.5em;">
+          Figure 1: Interactive plot showing a 2D plane slicing through a 3D grid of points.
+        </p>
+        <button onclick="unload3DPlot()" 
+                style="
+                  position: absolute;
+                  bottom: 10px;
+                  right: 10px;
+                  padding: 0.5em 1.5em;
+                  font-size: 0.9em;
+                  background-color: #f0f0f0;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  cursor: pointer;
+                ">
+          Unload Plot
+        </button>
+      </div>
+    `;
+  }
+
+  function unload3DPlot() {
+    const container = document.getElementById("plot-container");
+    container.innerHTML = `
+      <button onclick="load3DPlot(this)" style="padding: 1em 2em; font-size: 1em;">Load Interactive Plot</button>
+    `;
+  }
+</script>
+
+Figure 1 above shows a simplified case, where the generated plot made by the simulator is the 2D slice cutting through the 3D collection of data points (meaning number of variables N is equal to 3). Additionally, each straight line of on-plane points represented a different line drawn on the generated plot, and all other off-plane points aren't used. The end goal of generating a plot, then, is to create all needed on-plane data points to draw the desired line of points. Since all data lines need to share the same y-axis, all lines of points on the 2D plane are parallel, moving in the same direction.
 
 Speaking in terms of the plots themselves now, the range of x-values and the set of configurations are all that are needed to create a readable 2D plot. To create a flexible simulator that can display information in 2D plots, we must define the following: the parameter chosen for the parametric sweep, the range of sweep values, the specific parameters that are different among configurations, and a list of parameter defaults that all configurations share. A for-loop can easily loop through both the current sweep parameter value and configuration, and pass along those instances of the parameters to be given to the simulator. Once all data points needed to generate the plot are created, the plot can generate and the program can end.
 
