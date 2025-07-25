@@ -3,7 +3,7 @@ layout: default
 title:  "Impermanence in Cyberpunk 2077"
 description:  "Reflections on Mortality and Choice"
 date:   2025-07-22 4:16:00 -0500
-categories: simulator
+categories: essays
 ---
 
 <h3>{{ page.description }}</h3> 

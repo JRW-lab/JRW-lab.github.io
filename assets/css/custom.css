@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* keep forest background on the whole page */
+  background: #222; /* fallback background color */
+  background-image: url('/assets/images/forest-bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/* Remove or rename .container if unused now */
+/* You might want to remove this if using .page-content */
+
+.container {
+  /* You can delete this if not used */
+  background: rgba(255, 255, 255, 0.85); /* overlay */
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* The white vertical column behind content */
+.white-column {
+  position: absolute;
+  top: 573px;
+  bottom: 0; /* extend all the way to bottom */
+  left: 50%;
+  width: 960px; /* same as your content max-width */
+  transform: translateX(-50%);
+  background: #E4E4E4;
+  z-index: 0; /* above background, below content */
+}
+
+header, footer, .pages, .page-content {
+  position: relative; /* make z-index work */
+  z-index: 1; /* higher than white-column */
+}
+
+/* Your actual page content on top */
+.page-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 2;
+  background: transparent; /* so white-column shows behind */
+  text-align: justify;
+}
+
+.column-wrapper {
+  position: relative;   /* Allows white-column to be absolutely positioned inside */
+  min-height: 100vh;
+}
+
+/* .pages {
+  margin-bottom: -2.5rem;
+} */

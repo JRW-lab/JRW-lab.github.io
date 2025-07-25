@@ -6,23 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
-    
-	<style>
-		body {
-			background-color: #E6E6E6;
-			color: #000000;
-			margin: auto;
-			/* width: 700px; */
-			text-align: justify; 
-		}
-	</style>
+    <style>
+      body {
+        margin: auto;
+        text-align: justify;
+      }
+    </style>
 
-{% seo %}
+    {% seo %}
 
   </head>
 
   <body>
+
+    <!-- Forest Background, fixed and behind all -->
+    <div class="background-forest"></div>
+
+    <div class="column-wrapper">
+
+    <!-- White vertical column behind content -->
+    <div class="white-column"></div>
+
     <div id="container">
       <div class="inner">
 
@@ -31,21 +37,19 @@
           <h2>{{ site.description }}</h2> 
         </header>
 
-        <section id="pages">
+        <div class="pages">
           <a href="{{ site.baseurl | append: '/' }}" style="margin-right: 50px;">Home</a>&nbsp;
           <a href="{{ site.baseurl | append: '/projects' }}" style="margin-right: 50px;">Projects</a>&nbsp;
           <a href="{{ site.baseurl | append: '/nestarray' }}" style="margin-right: 50px;">NestArray</a>&nbsp;
           <a href="{{ site.baseurl | append: '/about' }}" style="margin-right: 50px;">About</a>&nbsp;
           <a href="{{ site.baseurl | append: '/about/contact' }}" style="margin-right: 50px;">Contact</a>&nbsp;
-        </section>
+          <hr>
+          <h2>{{ page.title }}</h2>
+        </div>
 
-        <hr>
-
-        <h2>{{ page.title}}</h2>
-
-        <section id="main_content">
+        <div class="page-content">
           {{ content }}
-        </section>
+        </div>
 
         <footer>
           <a href="{{ site.baseurl | append: '/about' }}" style="margin-right: 50px;">About</a>
@@ -54,5 +58,18 @@
 
       </div>
     </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        const header = document.querySelector("header");
+        const whiteColumn = document.querySelector(".white-column");
+        if (header && whiteColumn) {
+          const headerHeight = header.offsetHeight + 400;
+          whiteColumn.style.top = headerHeight + "px";
+        }
+      });
+    </script>
+
   </body>
 </html>
