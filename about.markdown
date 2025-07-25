@@ -10,4 +10,5 @@ I believe that meaningful progress—both in technology and society—comes from
 
 Here, you'll find examples of my work in statistical signal processing and wireless communications, along with a selection of personal projects. My experience includes research and development in pulse shaping waveforms, modulation techniques such as OFDM, OTFS, and ODDM, as well as machine learning applications in biomedical signal analysis.
 
-[View my resume]( /resume.pdf )
+[View my resume]( /resume.pdf )<br>
+[Contact me]( contact.html )

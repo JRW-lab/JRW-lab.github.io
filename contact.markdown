@@ -4,8 +4,11 @@ title: Contact
 permalink: /about/contact
 ---
 
-Contact me via email at jrwimer (at) uark.edu, or rhyswimer (at) gmail.com. Links to my accounts on various platforms can be found below.
+### Emails
+jrwimer (at) uark.edu <br>
+rhyswimer (at) gmail.com
 
-[GitHub Page](https://github.com/JRW-lab)
 
+### Accounts on Various Platforms
+[GitHub Page](https://github.com/JRW-lab) <br>
 [LinkedIn Profile](https://www.linkedin.com/in/jrwimer/)
