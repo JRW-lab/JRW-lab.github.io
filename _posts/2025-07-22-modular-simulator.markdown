@@ -67,4 +67,43 @@ As an overview, the steps of this simulator are:
 
 This method is completely simple, and yet it has taken me a long while to finally create a specific coding method that suits all my needs. I firmly believe that every coder needs to determine their own best solution to a problem and the only way to learn is by doing. But in the interest of helping any struggling graduate students or amateur scientist I include my own method for tackling this problem, hopefully in a way that can be created once and replicated as needed.
 
+sad
+as
+d
+asd
+asd
+
+sad
+as
+d
+asd
+sa
+d
+sad
+
+sad
+as
+d
+as
+d
+as
+da
+sd
+as
+d
+
+
+
+asd
+as
+d
+as
+d
+as
+d
+asd
+as
+d
+asd
+
 -JRW

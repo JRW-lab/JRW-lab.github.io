@@ -21,8 +21,11 @@
 
   <body>
 
-    <!-- Forest Background, fixed and behind all -->
-    <div class="background-forest"></div>
+    <!-- <div class="background-forest"></div> -->
+    <div class="parallax-layer layer4"></div>
+    <div class="parallax-layer layer3"></div>
+    <div class="parallax-layer layer2"></div>
+    <div class="parallax-layer layer1"></div>
 
     <div class="column-wrapper">
 
@@ -68,6 +71,18 @@
           const headerHeight = header.offsetHeight + 400;
           whiteColumn.style.top = headerHeight + "px";
         }
+      });
+    </script>
+
+    <script>
+      // Simple parallax scroll effect
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset;
+
+        document.querySelector('.layer4').style.transform = `translateY(${scrollTop * -0.2}px)`;
+        document.querySelector('.layer3').style.transform = `translateY(${scrollTop * -0.4}px)`;
+        document.querySelector('.layer2').style.transform = `translateY(${scrollTop * -0.6}px)`;
+        document.querySelector('.layer1').style.transform = `translateY(${scrollTop * -0.8}px)`;
       });
     </script>
 
