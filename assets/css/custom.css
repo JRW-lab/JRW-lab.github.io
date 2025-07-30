@@ -48,16 +48,13 @@ header, footer, .pages, .page-content {
   z-index: 2;
   background: transparent; /* so white-column shows behind */
   text-align: justify;
+  color: #202020;
 }
 
 .column-wrapper {
   position: relative;   /* Allows white-column to be absolutely positioned inside */
   min-height: 100vh;
 }
-
-/* .pages {
-  margin-bottom: -2.5rem;
-} */
 
 .parallax-layer {
   position: fixed;
@@ -89,4 +86,24 @@ header, footer, .pages, .page-content {
 .layer1 {
   background-image: url('/assets/images/forest-bg-layer1.png');
   z-index: -7;
+}
+
+/* Header Styles */
+/* h1 {
+    color: #1a73e8;
+} */
+h2 {
+    color: #000000;
+}
+h3 {
+    color: #3f3f3f;
+}
+h4 {
+    color: #000000;
+}
+h5 {
+    color: #000000;
+}
+h6 {
+    color: #000000;
 }

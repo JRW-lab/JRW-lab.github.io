@@ -9,13 +9,6 @@ I've spent a lot of time thinking through the most organized way to simulate a s
 
 Generally, this method works by treating a set of parameters as a unique unit and given a specific name, which can either be created in a readable format (I used to just list the parameter values in a string) or simply be a generated hash key. Each set of parameters is therefore treated as a single point in an N-dimensional space, where N is the number of parameters. In the same manner, a plot generated from these data points can be thought of as a 2D slice that holds all but a few parameters constant.
 
-<!-- <div style="text-align: center;">
-  <iframe src="/assets/3d_plane_plot.html" width="100%" height="500" style="border: none;"></iframe>
-  <p style="font-style: italic; margin-top: 0.5em;">
-    Figure 1: Interactive plot showing a 2D plane slicing through a 3D grid of points.
-  </p>
-</div> -->
-
 <div id="plot-container" style="position: relative; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; margin: 2em 0;">
   <button onclick="load3DPlot(this)" style="padding: 1em 2em; font-size: 1em;">Load Figure 1 (Interactive)</button>
 </div>
@@ -67,43 +60,8 @@ As an overview, the steps of this simulator are:
 
 This method is completely simple, and yet it has taken me a long while to finally create a specific coding method that suits all my needs. I firmly believe that every coder needs to determine their own best solution to a problem and the only way to learn is by doing. But in the interest of helping any struggling graduate students or amateur scientist I include my own method for tackling this problem, hopefully in a way that can be created once and replicated as needed.
 
-sad
-as
-d
-asd
-asd
-
-sad
-as
-d
-asd
-sa
-d
-sad
-
-sad
-as
-d
-as
-d
-as
-da
-sd
-as
-d
+### Formatting Simulation Profiles
 
 
-
-asd
-as
-d
-as
-d
-as
-d
-asd
-as
-d
-asd
 
 -JRW

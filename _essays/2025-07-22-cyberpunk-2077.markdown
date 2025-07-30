@@ -8,7 +8,7 @@ categories: essays
 
 <h3>{{ page.description }}</h3> 
 
-![Cyberpunk logo](/assets/cyberpunk_title.png)
+![Cyberpunk logo](/assets/images/cyberpunk_title.png)
 
 The following essay was written a few months ago when I decided to revist the videogame Cyberpunk 2077. In order to understand my decision to do so, I thought about what intrigued me about the game to begin with. Whether deliberate or not, the subtle storytelling present still makes Cyberpunk one of the most realistic sci-fi settings for me, and this essay focuses on one aspect of many that makes Cyberpunk 2077 unique.
 
@@ -28,4 +28,4 @@ Never fade away.
 
 -JRW
 
-![V leaning on car (screenshot)](/assets/V.png)
+![V leaning on car (screenshot)](/assets/images/V.png)
