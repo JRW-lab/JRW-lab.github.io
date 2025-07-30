@@ -32,8 +32,6 @@
     </script>
 
     <div class="column-wrapper">
-
-    <!-- White vertical column behind content -->
     <div class="white-column"></div>
 
     <div id="container">
@@ -79,7 +77,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       // Simple parallax scroll effect
       window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset;
@@ -88,6 +86,18 @@
         document.querySelector('.layer3').style.transform = `translateY(${scrollTop * -0.4}px)`;
         document.querySelector('.layer2').style.transform = `translateY(${scrollTop * -0.6}px)`;
         document.querySelector('.layer1').style.transform = `translateY(${scrollTop * -0.8}px)`;
+      });
+    </script> -->
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset;
+        ['layer4', 'layer3', 'layer2', 'layer1'].forEach(function (layerClass, i) {
+          const layer = document.querySelector('.' + layerClass);
+          if (layer) {
+            layer.style.transform = `translateY(${scrollTop * -((i + 1) * 2)/10}px)`;
+          }
+        });
       });
     </script>
 
