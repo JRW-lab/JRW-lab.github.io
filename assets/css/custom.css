@@ -7,9 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* keep forest background on the whole page */
-  background: #0E1B23; /* fallback background color */
-  /* background-image: url('/assets/images/forest-bg.png'); */
+  background: #E4E4E4;
   background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
@@ -34,7 +32,7 @@ body {
   top: 573px;
   bottom: 0; /* extend all the way to bottom */
   left: 50%;
-  width: 960px; /* same as your content max-width */
+  width: 960px;
   transform: translateX(-50%);
   background: #E4E4E4;
   z-index: 0; /* above background, below content */
