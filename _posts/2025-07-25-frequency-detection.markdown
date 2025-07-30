@@ -7,7 +7,7 @@ categories: projects
 
 [Project GitHub Repository](https://github.com/JRW-lab/PVP_IPFM_simulator)
 
-Signals collected from physiological processes have been ubiquitous in medical settings since arguably the beginning of civilization, although rudamentary uses were not as visualizable as what technology allows today. For instance, it has long been known that finding a patient's pulse was an indicator that said patient was still alive. Obviously, advances in medical science and methodology have revealed much more about the human body over the years, and the binary indicator of "alive/deceased" has long been abandoned for more sophisticated interpretations of internal bodily processes.
+Signals collected from physiological processes have been ubiquitous in medical settings since arguably the beginning of civilization, although rudamentary uses were not as visualizable as what technology allows today. For instance, it has long been known that finding a patient's pulse was an indicator that said patient was still alive. Obviously, advances in medical science and methodology have revealed much more about the human body over the years, and the binary indicator of "alive/deceased" has been replaced with a more sophisticated interpretations of internal bodily processes.
 
 <div style="text-align: center; margin: 2em 0;">
   <img src="/assets/gifs/ekg-heart-rate.gif" alt="Gif of EKG signal" style="max-width: 100%; height: auto;">
