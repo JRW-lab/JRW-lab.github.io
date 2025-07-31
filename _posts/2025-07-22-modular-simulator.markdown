@@ -3,25 +3,35 @@ layout: default
 title:  "Modular Simulator Design"
 date:   2025-07-22 10:00:00 -0500
 categories: simulator
+highlight: true
 ---
 
 I've spent a lot of time thinking through the most organized way to simulate a system in order to fully understand it. Obviously this is a general statement, and I've tried to create as specific a system as possible before the code becomes too general to make sense of. I eventually settled on a method that allows me to generate plots along a range of a selected variable, and the same method works for any stochastic process that intakes variables and outputs any kind of result metric.
 
 Generally, this method works by treating a set of parameters as a unique unit and given a specific name, which can either be created in a readable format (I used to just list the parameter values in a string) or simply be a generated hash key. Each set of parameters is therefore treated as a single point in an N-dimensional space, where N is the number of parameters. In the same manner, a plot generated from these data points can be thought of as a 2D slice that holds all but a few parameters constant.
 
-<div id="plot-container" style="position: relative; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; margin: 2em 0;">
+<div id="plot-container" style="position: relative; width: 100%; margin: 2em 0; text-align: center;">
   <button onclick="load3DPlot(this)" style="padding: 1em 2em; font-size: 1em;">Load Figure 1 (Interactive)</button>
 </div>
 
 <script>
   function load3DPlot(button) {
     const container = button.parentElement;
+
     container.innerHTML = `
-      <div style="position: relative; height: 100%;">
-        <iframe src="/assets/3d_plane_plot.html" width="100%" height="100%" style="border: none; margin-bottom: -1em;"></iframe>
-        <p style="font-style: italic; margin-top: 0.5em;">
-          Figure 1: Interactive plot showing a 2D plane slicing through a 3D grid of points.
-        </p>
+      <div style="position: relative; width: 100%;">
+        <iframe 
+          src="/assets/3d_plane_plot.html" 
+          style="
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            border: none;
+            display: block;
+          "
+          loading="lazy"
+        ></iframe>
+
         <button onclick="unload3DPlot()" 
                 style="
                   position: absolute;
@@ -48,6 +58,10 @@ Generally, this method works by treating a set of parameters as a unique unit an
   }
 </script>
 
+<p style="font-style: italic; margin-top: 0.5em;">
+  Figure 1: Interactive plot showing a 2D plane slicing through a 3D grid of points.
+</p>
+
 Figure 1 above shows a simplified case, where the generated plot made by the simulator is the 2D slice cutting through the 3D collection of data points (meaning number of variables N is equal to 3). Additionally, each straight line of on-plane points represented a different line drawn on the generated plot, and all other off-plane points aren't used. The end goal of generating a plot, then, is to create all needed on-plane data points to draw the desired line of points. Since all data lines need to share the same y-axis, all lines of points on the 2D plane are parallel, moving in the same direction.
 
 Speaking in terms of the plots themselves now, the range of x-values and the set of configurations are all that are needed to create a readable 2D plot. To create a flexible simulator that can display information in 2D plots, we must define the following: the parameter chosen for the parametric sweep, the range of sweep values, the specific parameters that are different among configurations, and a list of parameter defaults that all configurations share. A for-loop can easily loop through both the current sweep parameter value and configuration, and pass along those instances of the parameters to be given to the simulator. Once all data points needed to generate the plot are created, the plot can generate and the program can end.
@@ -62,6 +76,13 @@ This method is completely simple, and yet it has taken me a long while to finall
 
 ### Formatting Simulation Profiles
 
+    
 
+```matlab
+% MATLAB code without syntax highlighting
+t = 0:0.01:1;
+y = sin(2*pi*10*t);
+plot(t, y);
+```
 
 -JRW
