@@ -29,7 +29,7 @@ Tri-orthogonal delay-Doppler multiplexing, or TODDM, is a modulation scheme desi
 
 <div style="text-align: center; margin: 2em 0;">
   <img src="/assets/images/toddm.png" alt="TODDM Decision Hexgrid" style="max-width: 100%; height: auto;">
-  <p style="font-style: italic; margin-top: 0.5em;">Figure 3: Hexgrid of BER for possible configurations, 2048 symbols per time-frame.</p>
+  <p style="font-style: italic; margin-top: 0.5em;">Figure 3: Hexgrid of BER for possible configurations, 2048 symbols per time-frame, \( E_b/N_0 \) = 24dB.</p>
 </div>
 
 To learn more, visit our GitHub project page above to simulate it for yourself and better understand its strengths and weaknesses over OTFS and traditional ODDM.
