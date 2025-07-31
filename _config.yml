@@ -20,13 +20,14 @@
 
 title: JRW-Lab
 email: jrw@uark.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  "What I cannot create, I do not understand"
-  --Richard Feynman
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
 github_username:  JRW-lab
+
+# description: .github.io
+description: >-
+  "What I cannot create, I do not understand"
+  --Richard Feynman
 
 # Build settings
 theme: jekyll-theme-tactile
