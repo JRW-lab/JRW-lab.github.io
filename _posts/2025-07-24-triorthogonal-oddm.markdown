@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Tri-Orthogonal Delay-Doppler Modulation: TODDM"
+title:  "Tri-Orthogonal Delay-Doppler Multiplexing: TODDM"
 date:   2025-07-24 11:59:00 -0500
 categories: projects
 ---
@@ -25,7 +25,7 @@ If ODDM is unfamiliar to you, [please go here](https://oddm.io/) for a well-writ
 
 However, in using a data grid in the delay-Doppler domain, itself a finer-resolution time-frequency domain, the space used for data transission goes underutilized. If one were to sequentially send ODDM data frames, this multiplies the total time-domain duration by the number of data frames, but there is no immediately apparent analog to extending the total frequency-domain bandwidth. Of course, this could be achieved by simply shifting the frequency of each data frame, but this could only be achieved by implementing as many transmitters as frequency-levels you required. A desirable system is one that fully takes advantage of time, frequency, delay and Doppler domains while doing so on a single transmitter, to allow for mass implementation.
 
-Tri-orthogonal delay-Doppler modulation, or TODDM, is a modulation scheme designed to be such a system. By encoding delay, Doppler and frequency diversity in the pulse shaping level, a TODDM system can fully utilize all four domains as needed, given the constraints of the working environment. Below, Figure 3 displays all possible configurations of M subcarriers, N time symbols and U frequncy levels for a 2048-symbol time-frame (M×N×U=2048). For every level of N (holding frame time duration constant), there exists a combination of M and U that gives the lowest bit error rate at high signal-to-noise ratios.
+Tri-orthogonal delay-Doppler multiplexing, or TODDM, is a modulation scheme designed to be such a system. By encoding delay, Doppler and frequency diversity in the pulse shaping level, a TODDM system can fully utilize all four domains as needed, given the constraints of the working environment. Below, Figure 3 displays all possible configurations of M subcarriers, N time symbols and U frequncy levels for a 2048-symbol time-frame (M×N×U=2048). For every level of N (holding frame time duration constant), there exists a combination of M and U that gives the lowest bit error rate at high signal-to-noise ratios.
 
 <div style="text-align: center; margin: 2em 0;">
   <img src="/assets/images/toddm.png" alt="TODDM Decision Hexgrid" style="max-width: 100%; height: auto;">
