@@ -34,4 +34,8 @@ Tri-orthogonal delay-Doppler modulation, or TODDM, is a modulation scheme design
 
 To learn more, visit our GitHub project page above to simulate it for yourself and better understand its strengths and weaknesses over OTFS and traditional ODDM.
 
+<hr>
+
+#### References
+
 ###### [1] Wang, Xiyu & Wang, Gongpu & Fan, Rongfei & ai, bo. (2017). Channel Estimation With Expectation Maximization and Historical Information Based Basis Expansion Model for Wireless Communication Systems on High Speed Railways. IEEE Access. PP. 1-1. 10.1109/ACCESS.2017.2745708. 
