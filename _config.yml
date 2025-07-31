@@ -21,7 +21,7 @@
 title: JRW-Lab
 email: jrw@uark.edu
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jrw-lab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  JRW-lab
 permalink: /:title/
 
