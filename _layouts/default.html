@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
 
     <style>
       body {
@@ -43,11 +44,12 @@
         </header>
 
         <div class="pages">
-          <a href="{{ site.baseurl | append: '/' }}" style="margin-right: 50px;">Home</a>&nbsp;
-          <a href="{{ site.baseurl | append: '/projects' }}" style="margin-right: 50px;">Projects</a>&nbsp;
-          <a href="{{ site.baseurl | append: '/nestarray' }}" style="margin-right: 50px;">NestArray</a>&nbsp;
-          <a href="{{ site.baseurl | append: '/about' }}" style="margin-right: 50px;">About</a>&nbsp;
-          <a href="{{ site.baseurl | append: '/about/contact' }}" style="margin-right: 50px;">Contact</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/' }}" style="margin-right: 52px;">Home</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/projects' }}" style="margin-right: 52px;">Projects</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/nestarray' }}" style="margin-right: 52px;">NestArray</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/about' }}" style="margin-right: 52px;">About</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/about/contact' }}" style="margin-right: 52px;">Contact</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/feed.xml' }}" style="margin-right: 0vw;">RSS</a>
           <hr>
           <h2>{{ page.title }}</h2>
           <h3>{{ page.date | date: "%b %-d, %Y" }}</h3>
