@@ -60,6 +60,51 @@
           <h3>{{ page.date | date: "%b %-d, %Y" }}</h3>
         </div>
 
+        {% if page.toc %}
+          <div class="sidebar" id="toc-sidebar">
+            <!-- Table of Contents will be generated here -->
+          </div>
+        {% endif %}
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.getElementById('toc-sidebar');
+            if (!sidebar) return;
+
+            const content = document.querySelector('.page-content');
+            if (!content) return;
+
+            const headers = content.querySelectorAll('h2, h3, h4');
+            if (headers.length === 0) return;
+
+            // Create and append TOC title
+            const tocTitle = document.createElement('h3');
+            tocTitle.textContent = 'Table of Contents';
+            tocTitle.style.marginTop = '0';
+            sidebar.appendChild(tocTitle);
+
+            // Create and append TOC list
+            const tocList = document.createElement('ul');
+            headers.forEach(header => {
+              if (!header.id) {
+                header.id = header.textContent.trim().toLowerCase().replace(/[^\w]+/g, '-');
+              }
+
+              const li = document.createElement('li');
+              li.style.marginLeft = header.tagName === 'H3' ? '1em' : header.tagName === 'H4' ? '2em' : '0';
+
+              const a = document.createElement('a');
+              a.href = `#${header.id}`;
+              a.textContent = header.textContent;
+
+              li.appendChild(a);
+              tocList.appendChild(li);
+            });
+
+            sidebar.appendChild(tocList);
+          });
+        </script>
+
         <div class="page-content">
           {{ content }}
         </div>

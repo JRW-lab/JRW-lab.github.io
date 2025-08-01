@@ -7,11 +7,29 @@
 body {
   margin: 0;
   padding: 0;
-  background: #E4E4E4;
+  background: #0E1B23;
   background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+}
+
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background-color: #E4E4E4;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: calc(50vw - 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertical centering */
+  height: 80vh;             /* or full viewport height you want */
+  padding: 1rem;
+  border-left: 1px solid #ddd;
 }
 
 /* Remove or rename .container if unused now */
@@ -111,4 +129,11 @@ h5 {
 }
 h6 {
     color: #000000;
+}
+
+/* Hide sidebar on small screens */
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
 }

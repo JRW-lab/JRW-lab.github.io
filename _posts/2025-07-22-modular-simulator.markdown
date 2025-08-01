@@ -4,7 +4,10 @@ title:  "Modular Simulator Design for 2D Plots"
 date:   2025-07-22 10:00:00 -0500
 categories: simulator
 highlight: true
+toc: true
 ---
+
+### Overview
 
 I've spent a lot of time thinking through the most organized way to simulate a system in order to fully understand it. Obviously this is a very broad statement, and I've gone through great lengths to keep the code general while still being readable. I eventually settled on a method that allows me to generate 2D plots along a range of a selected variable, specifying each line with its own settings. This method works for any stochastic process that intakes variables and outputs any kind of result metric.
 
@@ -151,6 +154,8 @@ In my implementation for generating plots, I select a specific data type to disp
 With the initial simualtion profile set up, the results can now be iteratively simulated given the parameters we have defined.
 
 ### Simulation Loop
+
+The simulation profile has now defined the parametric sweep range and the configurations to be tested, and in doing so we can simply loop through each of these settings for however many iterations are needed to fully render a result. An example of this loop can be seen below, where I have previously attempted to load all results for this experiment, saving the number of iterations for each in the matrix "prior_frames".
 
 ```matlab
 for iter = 1:num_iters

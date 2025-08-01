@@ -37,6 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-toc
 
 include:
   - assets/
@@ -73,3 +74,11 @@ markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     default_lang: matlab
+
+toc:
+  min_level: 2
+  max_level: 4
+  no_toc_section_class: no_toc
+  list_class: toc-list
+  list_item_class: toc-item
+  auto_insert: true
