@@ -2,7 +2,7 @@
 layout: default
 title:  "Tri-Orthogonal Delay-Doppler Multiplexing: TODDM"
 date:   2025-07-24 11:59:00 -0500
-categories: projects
+categories: Project
 ---
 
 [Project GitHub Repository](https://github.com/JRW-lab/TODDM_simulator)

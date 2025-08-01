@@ -16,7 +16,7 @@ Hello and welcome to my personal website! This is where I share my thoughts, exp
     <span class="post-meta">{{ post.date | date: date_format }}</span>
     <h3>
       <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
+        {{ post.categories }}: {{ post.title | escape }}
       </a>
     </h3>
       {{ post.excerpt }}

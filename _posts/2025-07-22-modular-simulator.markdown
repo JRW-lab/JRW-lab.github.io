@@ -2,12 +2,10 @@
 layout: default
 title:  "Modular Simulator Design for 2D Plots"
 date:   2025-07-22 10:00:00 -0500
-categories: simulator
+categories: Post
 highlight: true
 toc: true
 ---
-
-### Overview
 
 I've spent a lot of time thinking through the most organized way to simulate a system in order to fully understand it. Obviously this is a very broad statement, and I've gone through great lengths to keep the code general while still being readable. I eventually settled on a method that allows me to generate 2D plots along a range of a selected variable, specifying each line with its own settings. This method works for any stochastic process that intakes variables and outputs any kind of result metric.
 
@@ -75,6 +73,8 @@ Speaking in terms of the plots themselves now, the range of x-values and the set
 - A set of parameter defaults that all configurations share.
 
 A for-loop can easily loop through both the current sweep parameter value and configuration, and pass along those parameter instances as inputs for a simulator function. Once all data points needed to generate the plot are created, the plot can generate and the program can end.
+
+### Overview
 
 As an overview, the steps of this simulator are:
 1. Define the simulation profile, which includes information on all needed results.
