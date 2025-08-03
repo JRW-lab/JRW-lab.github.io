@@ -5,7 +5,7 @@ date:   2025-07-25 00:09:00 -0500
 categories: Project
 ---
 
-[Project GitHub Repository](https://github.com/JRW-lab/PVP_IPFM_simulator)
+[GitHub Repository](https://github.com/JRW-lab/PVP_IPFM_simulator)
 
 Signals collected from physiological processes have been ubiquitous in medical settings since arguably the beginning of civilization, although rudamentary uses were not as visualizable as what technology allows today. For instance, it has long been known that finding a patient's pulse was an indicator that said patient was still alive. Obviously, advances in medical science and methodology have revealed much more about the human body over the years, and the binary indicator of "alive/deceased" has been replaced with a more sophisticated interpretations of internal bodily processes.
 

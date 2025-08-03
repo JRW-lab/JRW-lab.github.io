@@ -5,7 +5,7 @@ date:   2025-07-24 11:59:00 -0500
 categories: Project
 ---
 
-[Project GitHub Repository](https://github.com/JRW-lab/TODDM_simulator)
+[GitHub Repository](https://github.com/JRW-lab/TODDM_simulator)
 
 As society shifts to more demanding usages of wireless communication technology, it has become apparent that we have effectively reached a limit of orthogonal frequency division multiplexing (widely known as OFDM). This is due to delay and Doppler shifts appearing during data transmissions when a relatively high velocity can be seen between transmitting and receiving base stations. This same weakness of OFDM happens to be a strength of what became known as orthogonal time-frequency space modulation, or OTFS modulation.
 
