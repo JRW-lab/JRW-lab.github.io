@@ -31,7 +31,7 @@ Enter the RGB values of two colors, with commas separating each color value. RGB
   }
 </script>
 
-<div id="cube-container" style="width: 600px; height: 600px;"></div>
+<div id="cube-container" style="width: 100%; height: 600px;"></div>
 <canvas id="hud-canvas" style="position:absolute; left:0; top:200px; pointer-events:none; z-index:10;"></canvas>
 <script type="module" src="/assets/js/colorcube.js"></script>
 
