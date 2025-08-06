@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+
+    <style>
+      body {
+        margin: auto;
+        text-align: justify;
+      }
+    </style>
+
+    {% seo %}
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <div class="column-wrapper">
+
+    <script>
+      if (window.innerWidth >= 1024) {
+        document.write(`
+          <div class="parallax-layer layer4"></div>
+          <div class="parallax-layer layer3"></div>
+          <div class="parallax-layer layer2"></div>
+          <div class="parallax-layer layer1"></div>
+        `);
+      }
+    </script>
+
+    <div class="white-column"></div> 
+
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>{{ site.title }}</h1>
+          <h2>{{ site.description }}</h2> 
+        </header>
+
+        <div class="pages">
+          <a href="{{ site.baseurl | append: '/' }}" style="margin-right: 52px;">Home</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/projects' }}" style="margin-right: 52px;">Projects</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/nestarray' }}" style="margin-right: 52px;">NestArray</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/about' }}" style="margin-right: 52px;">About</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/about/contact' }}" style="margin-right: 52px;">Contact</a>&nbsp;
+          <a href="{{ site.baseurl | append: '/feed.xml' }}" style="margin-right: 0vw;">RSS</a>
+          <hr>
+          <h2>{{ page.title }}</h2>
+          <h3>{{ page.description }}</h3> 
+          <h3>{{ page.date | date: "%b %-d, %Y" }}</h3>
+        </div>
+
+        {% if page.toc %}
+          <div class="sidebar" id="toc-sidebar">
+            <!-- Table of Contents will be generated here -->
+          </div>
+        {% endif %}
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.getElementById('toc-sidebar');
+            if (!sidebar) return;
+
+            const content = document.querySelector('.page-content');
+            if (!content) return;
+
+            const headers = content.querySelectorAll('h2, h3, h4');
+            if (headers.length === 0) return;
+
+            // Create and append TOC title
+            const tocTitle = document.createElement('h3');
+            tocTitle.textContent = 'Table of Contents';
+            tocTitle.style.marginTop = '0';
+            sidebar.appendChild(tocTitle);
+
+            // Create and append TOC list
+            const tocList = document.createElement('ul');
+            headers.forEach(header => {
+              if (!header.id) {
+                header.id = header.textContent.trim().toLowerCase().replace(/[^\w]+/g, '-');
+              }
+
+              const li = document.createElement('li');
+              li.style.marginLeft = header.tagName === 'H3' ? '1em' : header.tagName === 'H4' ? '2em' : '0';
+
+              const a = document.createElement('a');
+              a.href = `#${header.id}`;
+              a.textContent = header.textContent;
+
+              li.appendChild(a);
+              tocList.appendChild(li);
+            });
+
+            sidebar.appendChild(tocList);
+          });
+        </script>
+
+        <div class="page-content">
+          {{ content }}
+        </div>
+
+        <footer>
+          <a href="{{ site.baseurl | append: '/about' }}" style="margin-right: 50px;">About</a>
+          <a href="{{ site.baseurl | append: '/about/contact' }}">Contact</a>
+        </footer>
+
+      </div>
+    </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        const header = document.querySelector("header");
+        const whiteColumn = document.querySelector(".white-column");
+        if (header && whiteColumn) {
+          const headerHeight = header.offsetHeight + 400;
+          whiteColumn.style.top = headerHeight + "px";
+        }
+      });
+    </script>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset;
+        ['layer4', 'layer3', 'layer2', 'layer1'].forEach(function (layerClass, i) {
+          const layer = document.querySelector('.' + layerClass);
+          if (layer) {
+            layer.style.transform = `translateY(${scrollTop * -((i + 1) * 2)/10}px)`;
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
