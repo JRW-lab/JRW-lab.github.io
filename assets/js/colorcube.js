@@ -6,13 +6,27 @@ const cubeSize = 255;
 
 const container = document.getElementById("cube-container");
 const width = container.clientWidth;
-const height = container.clientHeight;
+const height = width;
 
 // Scene and camera
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 camera.position.set(cubeSize + 1, cubeSize + 1, cubeSize + 1);
 camera.lookAt(scene.position);
+
+window.addEventListener('resize', () => {
+  const width = container.clientWidth;
+  const height = width; // to preserve square shape
+
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize(width, height);
+
+  const hudCanvas = document.getElementById('hud-canvas');
+  hudCanvas.width = width;
+  hudCanvas.height = height;
+});
 
 // Renderer
 const renderer = new THREE.WebGLRenderer();
