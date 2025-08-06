@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "three": "^0.179.1",
+    "three-orbitcontrols": "^2.110.2"
+  },
+  "devDependencies": {
+    "vite": "^7.0.6"
+  }
+}

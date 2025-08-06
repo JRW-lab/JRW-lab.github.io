@@ -7,7 +7,7 @@ Hello and welcome to my personal website! This is where I share my thoughts, exp
 
 <hr>
 
-{%- if site.posts.size > 0 -%}
+<h3>Recent posts</h3> 
 
 <ul class="post-list">
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -23,5 +23,3 @@ Hello and welcome to my personal website! This is where I share my thoughts, exp
   </li>
   {%- endfor -%}
 </ul>
-
-{%- endif -%}

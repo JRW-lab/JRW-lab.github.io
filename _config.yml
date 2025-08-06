@@ -45,6 +45,8 @@ include:
 collections:
   essays:
     output: true
+  widgets:
+    output: true
 
 feed:
   path: feed.xml
