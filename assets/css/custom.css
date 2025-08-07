@@ -18,6 +18,20 @@ body {
   box-sizing: border-box
 }
 
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-title img {
+  height: 45px;
+  width: auto;
+  /* max-height: 30px; */
+  object-fit: contain;
+  display: block;
+}
+
 .sidebar {
   width: 200px;
   min-height: 100vh;
@@ -51,7 +65,7 @@ body {
 /* The white vertical column behind content */
 .white-column {
   position: absolute;
-  top: 573px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;

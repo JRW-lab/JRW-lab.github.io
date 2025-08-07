@@ -4,9 +4,9 @@ title: NestArray
 permalink: /nestarray/
 ---
 
-This space merely acts as a main hub for my personal projects and thoughts. My more professional projects can be found by clicking Home above, but the work found here is less serious.
+This section is a main hub for my personal projects and thoughts. My more professional projects can be found on the <a href="/">Home Page</a>, but the work found here is less serious.
 
-## Essays
+### Essays
 
 <ul>
   {% for essay in site.essays %}
@@ -16,7 +16,7 @@ This space merely acts as a main hub for my personal projects and thoughts. My m
   {% endfor %}
 </ul>
 
-## Widgets
+### Widgets
 
 <ul>
   {% for widget in site.widgets %}
