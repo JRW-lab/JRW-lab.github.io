@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "ColorCube"
-date:   2025-08-02 0:00:00 -0500
+date:   2025-08-04 0:00:00 -0500
 categories: widgets
 description: "A 3D Representation of RGB"
 ---
