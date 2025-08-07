@@ -6,10 +6,6 @@ categories: widgets
 description: "A 3D Representation of RGB"
 ---
 
-Enter the RGB values of two colors, with commas separating each color value (RGB values range from 0 to 255). Alternatively, click the button to select either Point 1 or Point 2, then click on the cube to define that point.
-
-A gradient between the two colors is generated below, and hexcodes for each color can be seen by hovering over each point on the gradient.
-
 <style>
   canvas {
     -webkit-user-drag: none;
@@ -62,3 +58,6 @@ A gradient between the two colors is generated below, and hexcodes for each colo
   z-index: 100;">
 </div>
 
+Enter the RGB values of two colors, with commas separating each color value (RGB values range from 0 to 255). Alternatively, click the button to select either Point 1 or Point 2, then click on the cube to define that point.
+
+A gradient between the two colors is generated below, and hexcodes for each color can be seen by hovering over each point on the gradient.

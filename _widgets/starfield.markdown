@@ -16,9 +16,9 @@ When run, this script reads through the Excel document for locational data on ne
 <div style="text-align: center; margin: 2em 0;">
 <div>
   <div>
-    <button onclick="showImage(0)">XY Plane</button>
-    <button onclick="showImage(1)">XZ Plane</button>
-    <button onclick="showImage(2)">YZ Plane</button>
+    <button onclick="showImage(0)">X-Y Plane</button>
+    <button onclick="showImage(1)">X-Z Plane</button>
+    <button onclick="showImage(2)">Y-Z Plane</button>
   </div>
 
   <div>
