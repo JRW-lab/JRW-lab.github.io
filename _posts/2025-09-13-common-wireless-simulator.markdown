@@ -12,7 +12,7 @@ When I began my graduate studies, I was honestly not very knowledgeable about wi
 With this in mind, I began working on a common method for simulating wireless communication systems, saving the results and displaying graphics that communicate how these systems react under different scenarios. Now, nearly a year and half later, the project is finally in a state I feel proud to present to the public. This coding project was made with the hope of providing some illumination to incoming students, capable graduate students and technical hobbyists alike. It is written using MATLAB since the vast majority of my work was already spent using it, and I apologize to my Python researchers but MATLAB is just much easier for my geometry-inclined brain to understand. Regardless, it appears that many incoming students in my field are taught to use it as the software of choice, and all the required toolboxes should be prompted to install upon running for the first time, so perhaps it was a good decision to use MATLAB over Python if for no reason other than simplicity.
 
 <div style="text-align: center; margin: 2em 0;">
-  <img src="/assets/images/simulator-window.png" alt="Control window for the main simulator file" style="max-width: 100%; height: auto;">
+  <img src="/assets/images/simulator-window.PNG" alt="Control window for the main simulator file" style="max-width: 100%; height: auto;">
   <p style="font-style: italic; margin-top: 0.5em;">Figure 1: Control window for the main simulator file.</p>
 </div>
 
