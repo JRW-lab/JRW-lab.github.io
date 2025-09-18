@@ -29,6 +29,8 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
         <th style="border: 1px solid #ccc; padding: 8px;">Ideal Pulses</th>
         <th style="border: 1px solid #ccc; padding: 8px;">Realistic Pulses</th>
         <th style="border: 1px solid #ccc; padding: 8px;">Cyclic Prefix</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">CP-Less</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Timing Offset</th>
         <th style="border: 1px solid #ccc; padding: 8px;">Supported Receivers</th>
       </tr>
     </thead>
@@ -38,10 +40,23 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">MMSE, DD-BDFE, CMC-MMSE</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;">OTFS</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">ML, BDFE</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">OTFS-DD</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
@@ -49,6 +64,8 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;">ODDM</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
@@ -56,6 +73,14 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
       </tr>
     </tbody>
   </table>
+</div>
+
+<div style="margin: 1.5em auto; padding: 1em 1.2em; border: 1px solid #ccc; border-radius: 8px; background: #f9f9f9; font-size: 0.9em; width: 80%;">
+  <strong>Notes:</strong>
+  <ul style="margin-top: 0.5em; padding-left: 1.2em;">
+    <li>OTFS is a more common implementation found in recent literature. OTFS-DD attempts to directly modulate data symbols to delay-Doppler space, and the method was developed by my advisor Dr. Jingxian Wu. OTFS supports non-truncated ideal, rectangular and sinc pulses, while OTFS-DD supports truncated rectangular, sinc and RRC pulses.</li>
+    <li>OFDM with Cyclic Prefix is currently not supported. Please be patient.</li>
+  </ul>
 </div>
 
 If this project ends up being useful to you, please let me know via my contact page! I truly hope that this project can act as an educational tool for better understanding underlying design methodology and the physics that makes these systems work in the first place.
