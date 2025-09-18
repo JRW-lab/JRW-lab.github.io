@@ -51,7 +51,7 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">ML, BDFE</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">ML, MMSE, BDFE</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;">OTFS-DD</td>
