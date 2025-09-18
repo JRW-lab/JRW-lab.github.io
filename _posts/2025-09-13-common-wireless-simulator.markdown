@@ -79,7 +79,7 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
   <strong>Notes:</strong>
   <ul style="margin-top: 0.5em; padding-left: 1.2em;">
     <li>OTFS is a more common implementation found in recent literature. OTFS-DD attempts to directly modulate data symbols to delay-Doppler space, and the method was developed by my advisor Dr. Jingxian Wu. OTFS supports non-truncated ideal, rectangular and sinc pulses, while OTFS-DD supports truncated rectangular, sinc and RRC pulses.</li>
-    <li>OFDM with Cyclic Prefix is currently not supported. Please be patient.</li>
+    <li>OFDM without Cyclic Prefix is currently not supported. Please be patient.</li>
   </ul>
 </div>
 
