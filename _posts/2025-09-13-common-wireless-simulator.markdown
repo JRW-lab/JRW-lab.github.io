@@ -47,7 +47,7 @@ As of writing this, it is capable of simulating and comparing orthogonal frequen
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;">OTFS</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">✔️</td>
         <td style="border: 1px solid #ccc; padding: 8px;">❌</td>
