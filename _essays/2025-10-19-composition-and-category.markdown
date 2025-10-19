@@ -7,10 +7,6 @@ categories: Essay
 ---
 
 ![Cosmic Scales image from ExploreYourReality.com](/assets/images/cosmic-scales-from-planck-to-the-universe-scaled.png)
-
-The following essay was written a few months ago when I decided to revist the videogame Cyberpunk 2077. In order to understand my decision to do so, I thought about what intrigued me about the game to begin with. Whether deliberate or not, the subtle storytelling present still makes Cyberpunk one of the most realistic sci-fi settings for me, and this essay focuses on one aspect of many that makes Cyberpunk 2077 unique.
-
-<hr>
 	
 Philosophically, I find myself quite interested in the concept of composition, and more specifically the exact instance where something goes from being simply a collection to being “more than the sum of its parts.” This is a commonplace saying, yet I don’t think people examine just how often objects transcend their original makeup and gain this new quality. For instance, if you were to go on an art museum tour with a particularly insufferable friend, you may be the victim of hearing the complaint that “these sculptures are so easy to build, even I could’ve done them!” Of course, this opinion has been uttered an uncountable number of times, and the seemingly correct rebuttal would be something akin to “but no one before the artist thought to actually do it, and that’s exactly why this piece is interesting.” That is, the content of the actions needed to create are not the entire picture; the context of why those actions are being taken also contributes to the identity of the created work.
 
@@ -27,4 +23,4 @@ What clearly comes into focus is this: everywhere in nature, the one constant is
 
 -JRW
 
-![V leaning on car (screenshot)](/assets/images/V.png)
+![V leaning on car (screenshot)](/assets/images/hubble-space-image.png)
