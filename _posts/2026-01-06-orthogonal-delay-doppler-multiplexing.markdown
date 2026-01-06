@@ -6,8 +6,8 @@ categories: Project
 ---
 
 [CP-Free ODDM over General Doubly-Selective Fading Channels](https://ieeexplore.ieee.org/document/11319320)
-[GitHub Repository](https://github.com/JRW-lab/Common_Wireless_Simulator)
 
+[GitHub Repository](https://github.com/JRW-lab/Common_Wireless_Simulator)
 
 While many modulation schemes are being proposed for the upcoming sixth generation of wireless carrier technology (better known as 6G), the most predominant candidate by far has been Orthogonal Time-Frequency Space modulation, or OTFS modulation. OTFS works by assigning data symbols to individual delay and Doppler taps, creating a 2D grid space where each symbol is modulated on a pulse that is orthogonal to all other pulses. For the sake of simplicity, delay and Doppler taps can be thought of as time and frequency taps, but with a much finer resolution than the typical scales used in time and frequency space.
 
@@ -20,6 +20,6 @@ OTFS functions by generating data in the delay-Doppler domain before converting 
 
 However, the proposed OTFS model has several flaws. Notably, most implementations use an OFDM-based approach, relying on existing 5G hardware to perform IDFT rather than the more complex Wigner transform. This leads to reduced complexity in the receiver design at the expense of precision for determining delay and Doppler shifts, leading to overall lower efficiency. Arguably the most pressing issue, though, is that pulse shaping and filtering is performed in time-frequency space, rather than directly in delay-Doppler space where the symbols are first modulated. By converting delay-Doppler symbols to time-frequency symbols before pulse shaping, severe ISI is introduced because pulse-shaping waveforms that are orthogonal in time-frequency space may not be orthogonal in delay-Doppler space.
 
+Despite these known issues, OTFS is still seen as a top contender for the basis of 6G, because it was theorized that pulse-shaping waveforms that are orthogonal in delay-Doppler space simply was not possible, based on the Weyl-Heisenberg frame theory. But, crucially, the WH frame theory explicitly stated that there were no *globally* orthogonal waveforms in delay-Doppler space. Interesting enough, that is not actually needed to directly pulse shape data in delay-Doppler space, since only a small subset of the space is used to create the 2D data grid. Based on this revelation, Orthogonal Delay-Doppler Multiplexing, or ODDM, was developed.
 
-
-in that designing an efficient receiver is a daunting task and most implementations utilize an OFDM-based approach, relying on existing 5G hardware rather than novel ideas. Moreover, pulse shaping and filtering is performed in time-frequency space
+-JRW
