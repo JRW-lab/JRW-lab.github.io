@@ -5,7 +5,8 @@ date:   2025-07-25 00:09:00 -0500
 categories: Project
 ---
 
-[GitHub Repository](https://github.com/JRW-lab/PVP_IPFM_simulator)
+[GitHub Repository](https://github.com/JRW-lab/PVP_IPFM_simulator)  
+[Relevant Paper](https://doi.org/10.2139/ssrn.5894612)
 
 Signals collected from physiological processes have been ubiquitous in medical settings since arguably the beginning of civilization, although rudamentary uses were not as visualizable as what technology allows today. For instance, it has long been common knowledge that the duration between a patient's pulses correlates with certain bodily conditions, ranging from an infection to an underlying heart condition. Obviously, advances in medical science and methodology have revealed much more about the human body over the years, and the binary statuses of "healthy/ill" has been replaced with more sophisticated interpretations of internal bodily processes.
 
@@ -34,6 +35,6 @@ Alternatively, **Ordinal** logistic regression allows for the detection of multi
 
 At the time of writing this, the code included on GitHub can only perform the single-stage detection method, but implementing multiple layers is not fundamentally different; it simply performs prediction on the same frequency domain sample multiple times using different models. The code can be used to generate these models, and a user can save them and import them into another script.
 
- While this strategy of using PVP signals is still fairly new, the potential benefit to the medical field should be apparent, and I hope that it eventually develops as a real tool for preventing complications in a clinical setting. If you are interested in using logistic regression models for your own detection project using PVP signals, feel free to look at the project code included above!
+ While this strategy of using PVP signals is still fairly new, the potential benefit to the medical field should be apparent, and I hope that it eventually develops as a real tool for preventing complications in a clinical setting. If you are interested in using logistic regression models for your own detection project using PVP signals, feel free to read the relevant paper I helped author, and look at the corresponding project code uploaded to GitHub. Links to both can be found above!
 
 -JRW
