@@ -23,4 +23,4 @@ What clearly comes into focus is this: everywhere in nature, the one constant is
 
 -JRW
 
-![V leaning on car (screenshot)](/assets/images/hubble-space-image.png)
+![Hubble space telescope image](/assets/images/hubble-space-image.png)
